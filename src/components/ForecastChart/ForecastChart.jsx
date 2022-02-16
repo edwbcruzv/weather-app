@@ -17,4 +17,5 @@ ForecastChart.propTypes = {
     )
 }
 
+
 export default ForecastChart
