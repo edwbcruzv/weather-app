@@ -16,6 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 https://mui.com/getting-started/installation/
 
 >npm install @mui/material @emotion/react @emotion/styled
+
 >npm install @mui/icons-material
 
 https://react-icons.github.io/react-icons/
@@ -23,3 +24,5 @@ https://react-icons.github.io/react-icons/
 >npm install react-icons --save
 
 >npm install recharts
+
+>npm install react-router-dom@6
