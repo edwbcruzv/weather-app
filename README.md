@@ -17,6 +17,8 @@ https://mui.com/getting-started/installation/
 
 >npm install @mui/material @emotion/react @emotion/styled
 
+>npm install @mui/material @mui/styled-engine-sc styled-components
+
 >npm install @mui/icons-material
 
 https://react-icons.github.io/react-icons/
@@ -26,3 +28,11 @@ https://react-icons.github.io/react-icons/
 >npm install recharts
 
 >npm install react-router-dom@6
+
+https://github.com/tengbao/vanta
+
+>npm install vanta
+
+https://github.com/mrdoob/three.js/ (para usar vantajs)
+
+>npm install three@0.115.0

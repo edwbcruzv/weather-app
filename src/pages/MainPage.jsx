@@ -1,6 +1,9 @@
+import { Paper } from '@mui/material'
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
+import AppFrame from '../components/AppFrame/AppFrame'
 import CityList from '../components/CityList'
+
 
 const MainPage = props => {
   const navigate =useNavigate()
@@ -17,10 +20,11 @@ const MainPage = props => {
 ]
 
   return (
-    <div>
-        <h2>Lista de ciudades</h2>
-        <CityList cities={cities} onClickCity={onClickHandler} ></CityList>
-    </div>
+    <AppFrame>
+      <Paper elevation={10}>
+        <CityList cities={cities} onClickCity={onClickHandler} ></CityList> {/*children */}
+        </Paper>
+    </AppFrame>
   )
 }
 

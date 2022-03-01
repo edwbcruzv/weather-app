@@ -1,14 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import WelcomeScreen from '../components/WelcomeScreen/WelcomeScreen'
+import { Grid } from '@mui/material'
 
 const WelcomePage = () => {
   return (
-    <div>
-      Welcome
-        <div>
-            <Link to="/main">Ir a main</Link> {/*Tiene que ir dentro de Router */}
-        </div>
-    </div>
+    <WelcomeScreen>
+        <Grid container 
+        direction="column"
+        justify="center"
+        className="full">
+          <div className="highlight">
+
+          </div>
+
+
+        </Grid>
+    </WelcomeScreen>
   )
 }
 

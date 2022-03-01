@@ -1,4 +1,3 @@
-import { Grid } from '@mui/material'
 import React from 'react'
 
 import CityInfo from '../components/CityInfo'
@@ -6,6 +5,10 @@ import Weather from '../components/Weather'
 import WeatherDetails from '../components/WeatherDetails'
 import Forecast from '../components/Forecast'
 import ForecastChart from'../components/ForecastChart'
+import AppFrame from '../components/AppFrame/AppFrame'
+
+import { Grid } from '@mui/material'
+
 
 const CityPage = () => {
   const data = [
@@ -59,7 +62,9 @@ const CityPage = () => {
 
 
   return (
-    <Grid container
+
+    <AppFrame>
+      <Grid container
       justify="space-around"
       direction="column"
       spacing={2}>
@@ -83,6 +88,9 @@ const CityPage = () => {
           <Forecast forecastItemList={forecastItemList}/>
         </Grid>
     </Grid>
+    </AppFrame>
+
+    
   )
 }
 
