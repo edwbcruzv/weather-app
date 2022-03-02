@@ -7,6 +7,6 @@ export default {
     component: WelcomeScreen
 }
 
-export const WelcomeScreemExample =()=>{
-    <WelcomeScreen></WelcomeScreen>
+export const WelcomeScreemExample = () =>{
+    return <WelcomeScreen></WelcomeScreen>
 }

@@ -7,7 +7,6 @@ export default {
 }
 
 
-export const WeatherDetailsExample =()=>{
-    <WeatherDetails humidity={10} wind={5}/>
-}
+export const WeatherDetailsExample = () => (<WeatherDetails humidity={10} wind={5}/>
+)
 

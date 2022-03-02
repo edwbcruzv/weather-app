@@ -2,13 +2,12 @@ import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import AppFrame from './AppFrame'
 
-
 export default{
     title:"AppFrame",
-    component:AppFrame
+    component:AppFrame,
 }
 
-export const AppFrameExample=()=>( 
+export const AppFrameExample = () => ( 
     <Router>
         <AppFrame>
             Lorem ipsum, dolor sit 
@@ -17,5 +16,4 @@ export const AppFrameExample=()=>(
              Assumenda, eius temporibus.
         </AppFrame>
     </Router>
-
 )

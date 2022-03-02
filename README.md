@@ -1,17 +1,22 @@
-# Getting Started with Create React App
+# Proyecto creado con react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para mas [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Al clonar este repositorio
 
-In the project directory, you can run:
+Para correr el proyecto se necesitaran las dependencias del package.json
 
-### `npm start`
+ingresar el sig comando:
+>npm install
 
-Runs the app in the development mode.\
+importante tener node actualizado
+
+Servidor y puerto por defecto.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Material adicional
+### Anexo
+
+## Comandos que se implementaron en el desarrollo
 
 https://mui.com/getting-started/installation/
 
@@ -36,3 +41,24 @@ https://github.com/tengbao/vanta
 https://github.com/mrdoob/three.js/ (para usar vantajs)
 
 >npm install three@0.115.0
+
+# detalles de Storybook
+
+al crear una historia tener cuidado en los export, ejemplo
+-Importante la separacion del simbolo = y el simbolo (
+-el componente que va entre corchetes se usa return sino cambiar los corchetes por parentesis
+
+export const WelcomeScreemExample = () =>{
+    return <WelcomeScreen></WelcomeScreen>
+}
+
+o tambien:
+
+export default {
+    title: "WelcomeScreem",
+    component: WelcomeScreen
+}
+
+export const WelcomeScreemExample = () =>(
+    <WelcomeScreen></WelcomeScreen>
+)

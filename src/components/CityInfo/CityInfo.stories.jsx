@@ -1,10 +1,9 @@
 import React from 'react'
-import "typeface-roboto"//imperseptible
 import CityInfo from './CityInfo'
 
 export default {
     title: "CityInfo",
-    component: CityInfo
+    component: CityInfo,
 }
 
 export const CityExample = (args) => (

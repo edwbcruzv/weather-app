@@ -5,6 +5,6 @@ export default {
     title:"ForecastItem",
     component: ForecastItem
 }
-export const LunesSoleado =()=>{
-    <ForecastItem weekDay="Lunes" hour={10} state="sunny" temperature={40}  />
+export const LunesSoleado = () => {
+    return <ForecastItem weekDay="Lunes" hour={10} state="sunny" temperature={40}  />
 }

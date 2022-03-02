@@ -17,7 +17,7 @@ const forecastItemList=[
 ]
 
 
-export const ForecastExample =()=>(
+export const ForecastExample = () => (
 
     <Forecast forecastItemList={forecastItemList}/>
 )
