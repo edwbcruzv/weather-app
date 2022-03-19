@@ -7,13 +7,14 @@ export default {
     component: Forecast
 }
 
+
 const forecastItemList=[
-    {weekDay:"Lunes",hour:10,state:"cloud",temperature:30},
-    {weekDay:"Martes",hour:20,state:"cloudy",temperature:40},
-    {weekDay:"Miercoles",hour:30,state:"fog",temperature:50},
-    {weekDay:"Jueves",hour:40,state:"sunny",temperature:60},
-    {weekDay:"Viernes",hour:50,state:"rain",temperature:70},
-    {weekDay:"Sabado",hour:60,state:"sunny",temperature:80},
+    {weekDay:"Lunes",hour:10,state:"clouds",temperature:30},
+    {weekDay:"Martes",hour:2,state:"clear",temperature:40},
+    {weekDay:"Miercoles",hour:3,state:"snow",temperature:50},
+    {weekDay:"Jueves",hour:4,state:"drizzle",temperature:60},
+    {weekDay:"Viernes",hour:5,state:"rain",temperature:70},
+    {weekDay:"Sabado",hour:6,state:"thunderstorm",temperature:80},
 ]
 
 

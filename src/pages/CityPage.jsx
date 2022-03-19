@@ -65,18 +65,18 @@ const CityPage = () => {
 
     <AppFrame>
       <Grid container
-      justify="space-around"
+      justifyContent="space-around"
       direction="column"
       spacing={2}>
         <Grid item container
           xs={12}
-          justify="center"
+          justifyContent="center"
           alingItems="flex_end">
           <CityInfo city={city} country={country}/>
         </Grid>
 
         <Grid item xs={12}
-        justify="center">
+        justifyContent="center" >
             <Weather state={state} temperature={temperature}/>
             <WeatherDetails humidity={humidity} wind={wind} />
         </Grid>

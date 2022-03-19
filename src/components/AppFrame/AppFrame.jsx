@@ -10,7 +10,7 @@ const AppFrame = ({children}) => {
   return (
     <div>
         <Grid container
-            justify="center"
+            justifyContent="center"
             >
                 <AppBar position="static">
                     <Toolbar variant="dense">
@@ -26,9 +26,17 @@ const AppFrame = ({children}) => {
                             </Link>
 
                         </IconButton>
+                        <IconButton color="inherit" aria-label="menu">
+                            <Link component={LinkRouter}
+                                to="/" 
+                                color="inherit" 
+                                aria-label="menu">
                         <Typography variant="h6">
                             Weather App
                         </Typography>
+                        </Link>
+
+                        </IconButton>
                     </Toolbar>
                 </AppBar>
 

@@ -3,7 +3,7 @@ import WelcomeScreen from './WelcomeScreen';
 
 
 export default {
-    title: "WelcomeScreem",
+    title: "WelcomeScreen",
     component: WelcomeScreen
 }
 

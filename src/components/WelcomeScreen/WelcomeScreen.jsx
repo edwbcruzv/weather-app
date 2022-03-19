@@ -30,8 +30,6 @@ const WelcomeScreen = ({children}) => {
             console.log("libero recursos")
           }
         }
-
-
     },[vanta])
   return (
     <div className="full" ref={myRefDiv}>

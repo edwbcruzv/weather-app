@@ -7,10 +7,10 @@ export default{
     component: CityList
 }
 const cities = [
-    {city : "Buenos Aires",country:"Argentina"},
-    {city : "Bogota",country:"Colombia"},
-    {city : "Matrid",country:"España"},
-    {city : "Ciudad De Mexico",country:"Mexico"}
+    {city : "Buenos Aires",country:"Argentina",countryCode:"AR"},
+    {city : "Bogota",country:"Colombia",countryCode:"CO"},
+    {city : "Matrid",country:"España",countryCode:"ES"},
+    {city : "Ciudad De Mexico",country:"Mexico",countryCode:"MX"}
 ]
 
 export const CityListExample = () =>{

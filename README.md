@@ -42,18 +42,23 @@ https://github.com/mrdoob/three.js/ (para usar vantajs)
 
 >npm install three@0.115.0
 
+>npm install axios
+
+>npm install convert-units --save
+
 # detalles de Storybook
 
-al crear una historia tener cuidado en los export, ejemplo
--Importante la separacion del simbolo = y el simbolo (
--el componente que va entre corchetes se usa return sino cambiar los corchetes por parentesis
+Al crear una historia tener cuidado en los export, ejemplo:
+- Importante la separacion del simbolo = y el simbolo (
+- El componente que va entre corchetes se usa return, sino cambiar los corchetes por parentesis.
 
+```javascript
 export const WelcomeScreemExample = () =>{
     return <WelcomeScreen></WelcomeScreen>
 }
-
+```
 o tambien:
-
+```javascript
 export default {
     title: "WelcomeScreem",
     component: WelcomeScreen
@@ -62,3 +67,4 @@ export default {
 export const WelcomeScreemExample = () =>(
     <WelcomeScreen></WelcomeScreen>
 )
+```

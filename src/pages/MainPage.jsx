@@ -4,19 +4,18 @@ import {useNavigate} from 'react-router-dom'
 import AppFrame from '../components/AppFrame/AppFrame'
 import CityList from '../components/CityList'
 
-
 const MainPage = props => {
   const navigate =useNavigate()
   const onClickHandler =()=>{
-    //navigate.push: nos permite alterar la URL por programacion
+    //navigate: nos permite alterar la URL por programacion
     navigate("/city")
   }
 
   const cities = [
-    {city : "Buenos Aires",country:"Argentina"},
-    {city : "Bogota",country:"Colombia"},
-    {city : "Matrid",country:"España"},
-    {city : "Ciudad De Mexico",country:"Mexico"}
+    {city : "Buenos Aires",country:"Argentina",countryCode:"AR"},
+    {city : "Bogota",country:"Colombia",countryCode:"CO"},
+    {city : "Matrid",country:"España",countryCode:"ESP"},
+    {city : "Ciudad De Mexico",country:"Mexico",countryCode:"MX"}
 ]
 
   return (
