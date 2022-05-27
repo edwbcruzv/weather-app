@@ -45,18 +45,18 @@ const CityPage = () => {
 ]
 
   const forecastItemList=[
-    {weekDay:"Lunes",hour:10,state:"cloud",temperature:30},
-    {weekDay:"Martes",hour:20,state:"cloudy",temperature:40},
-    {weekDay:"Miercoles",hour:30,state:"fog",temperature:50},
+    {weekDay:"Lunes",hour:10,state:"clouds",temperature:30},
+    {weekDay:"Martes",hour:20,state:"clear",temperature:40},
+    {weekDay:"Miercoles",hour:30,state:"thunderstorm",temperature:50},
     {weekDay:"Jueves",hour:40,state:"sunny",temperature:60},
     {weekDay:"Viernes",hour:50,state:"rain",temperature:70},
-    {weekDay:"Sabado",hour:60,state:"sunny",temperature:80},
+    {weekDay:"Sabado",hour:60,state:"drizzle",temperature:80},
   ]
 
   const city="Mexico"
   const country="CDMX"
   const temperature=10 
-  const state="cloud"
+  const state="sunny"
   const humidity=25 
   const wind=6
 
@@ -71,7 +71,7 @@ const CityPage = () => {
         <Grid item container
           xs={12}
           justifyContent="center"
-          alingItems="flex_end">
+          alignItems="flex_end">
           <CityInfo city={city} country={country}/>
         </Grid>
 

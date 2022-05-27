@@ -31,7 +31,7 @@ https://react-icons.github.io/react-icons/
 
 >npm install react-icons --save
 
->npm install recharts (pendiente)
+>npm install recharts --force (no es compatible en la 18 en adelante, usar 16 o 17)
 
 >npm install react-router-dom@6
 

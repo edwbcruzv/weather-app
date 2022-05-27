@@ -7,5 +7,5 @@ export default {
 }
 
 export const WeatherExample = () =>(
-    <Weather temperature={10} state="cloud"></Weather>
+    <Weather temperature={10} state="snow"></Weather>
     )
