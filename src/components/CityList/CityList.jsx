@@ -4,6 +4,8 @@ import CityInfo from '../CityInfo'
 import { Grid, List, ListItem } from '@mui/material'
 import Weather from "../Weather"
 import axios from 'axios'
+import convert from 'convert-units';
+
 
 
 const renderCityAndCountry = eventOnClickCity => (cityAndCountry, weather )=>{
@@ -50,13 +52,18 @@ const CityList = ({cities,onClickCity}) => {
         */
 
     useEffect(() => {
+        
+
         const setWeather=(city,country,countryCode)=>{
         axios
         .get(`https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=9cf748c04e6ae0f475486f0f2fcc3e53`)
         .then(response=>{
+            
+
             const {data}=response
-            const temperature=data.main.temp
-            const state =data.weather[0].main.toLowerCase()
+            const temperature=Number(convert(data.main.temp).from("K").to("C").toFixed(0))
+            // const state =data.weather[0].main.toLowerCase()
+            const state = "snow"
 
             const propName=`${city}-${country}` // Ej: [Ciudad de Mexico -CDMX]
             const propValue={temperature,state} // Ej: {temperature:20,state:"sunny"}
