@@ -6,6 +6,15 @@ import { AppBar, Grid, IconButton, Link, Toolbar, Typography } from '@mui/materi
 import { IconContext } from 'react-icons'
 import { WiDaySunny } from 'react-icons/wi'
 
+
+/**
+ * Todo lo que este dentro de las etiquetas se va a props.children
+ * 
+ * 
+ * <AppFrame> Lo que este aqui dentro se va props.children</AppFrame>
+ * @param {Children} param0 
+ * @returns 
+ */
 const AppFrame = ({children}) => {
   return (
     <div>

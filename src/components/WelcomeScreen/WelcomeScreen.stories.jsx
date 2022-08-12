@@ -8,5 +8,5 @@ export default {
 }
 
 export const WelcomeScreemExample = () =>{
-    return <WelcomeScreen></WelcomeScreen>
+    return <WelcomeScreen><h2>Esto se va a props.children</h2></WelcomeScreen>
 }

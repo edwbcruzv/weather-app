@@ -3,36 +3,36 @@ import PropTypes from 'prop-types'
 import Clouds from 'vanta/dist/vanta.clouds.min'
 import * as THREE from 'three'
 
+
+/**
+ * El componente es un fondo para el sitio web de bienvenida con ayuda de las librerias:
+ * vantajs y three, ver documentacion.
+ * 
+ * lo que se encuentre dentro de las etiquetas se recibe en props.children
+ * <WelcomeScreen>aqui van componentes que se deseen</WelcomeScreen>
+ * @param {children} param0 
+ * @returns 
+ */
 const WelcomeScreen = ({children}) => {
-    const myRefDiv=useRef(null) // valor inicial
+  
+  const [vantaEffect, setVantaEffect] = useState(0)
+  const myRef = useRef(null)
 
-    const [vanta,setVanta]=useState(0) //vanta se inicializa
 
-    //primera renderizacion "myRefCurrent" es igual a "null"
-    console.log("myRefDiv.current",myRefDiv.current)
-
-    useEffect(()=>{
-        console.log("myRefDiv.current(useEffect)",myRefDiv.current)
-        if (!vanta){
-          setVanta(1)
-          //activa los efectos de nube
-          Clouds({
-            THREE,
-            el:myRefDiv.current
-          })
-          console.log("establesco vanta diferente a 0")
-        }
-        //Al salir de la pantalla debemos de detener el efecto
-        return() => {
-          // Aqui se destruiran los recursos creados por vanta
-          if(vanta){
-            vanta.destroy()
-            console.log("libero recursos")
-          }
-        }
-    },[vanta])
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(Clouds({
+        el: myRef.current,
+        THREE: THREE // linea distinta a la doc, se agrega para usar este tipo de efectos
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+  
   return (
-    <div className="full" ref={myRefDiv}>
+    <div className="full" ref={myRef}>
         {children}
     </div>
   )

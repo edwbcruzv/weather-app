@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {BrowserRouter as Router,
         Routes,
@@ -19,7 +18,7 @@ const App = props => {
                 <Routes>
                     <Route path="/" element={<WelcomePage/>}> </Route>
                     <Route path="/main" element={<MainPage/>}> </Route>
-                    <Route path="/city" element={<CityPage/>}> </Route>
+                    <Route path="/city/:countryCode/:city" element={<CityPage ci/>}> </Route>
                     <Route path="*" element={<NotFoundPage/>}> </Route>
                 </Routes>
             </Router>

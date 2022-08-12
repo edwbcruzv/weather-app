@@ -1,40 +1,72 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-    WiDayCloudy,
-    WiDayFog,
-    WiDaySunny,
+    WiThunderstorm,
+    WiRainMix,
     WiRain,
     WiSnow,
-    WiRaindrop, 
-    WiThunderstorm} from 'react-icons/wi'
+    WiFog,
+    WiSmoke,
+    WiDayHaze,
+    WiDust,
+    WiDayFog,
+    WiSandstorm,
+    WiVolcano,
+    WiShowers,
+    WiTornado,
+    WiDaySunny,
+    WiDayCloudy} from 'react-icons/wi'
 
-// valores que se pueden recibir
+// valores que se pueden recibir validados por prop-types
 export const validValues=[
-    
-    "clouds",
-    "clear",
-    "sunny",
+    "thunderstorm",
+    "drizzle",
     "rain",
     "snow",
-    "drizzle",
-    "thunderstorm"
-     ]
+    "mist",
+    "smoke",
+    "haze",
+    "dust",
+    "fog",
+    "sand",
+    "dust",
+    "ash",
+    "squall",
+    "tornado",
+    "clear",
+    "clouds"
+    ]
 
-// cada string tiene un icono asociado
+// cada string se debe asociar para mostrar el icono correcto
+// los iconos estan en react-icons
 const stateByName = {
-    clouds: WiDayCloudy,
-    fog: WiDayFog,
-    clear: WiDaySunny,
-    rain: WiRain,
+    thunderstorm:WiThunderstorm,
+    drizzle:WiRainMix,
+    rain:WiRain,
     snow:WiSnow,
-    drizzle: WiRaindrop,
-    thunderstorm:WiThunderstorm
+    mist:WiFog,
+    smoke:WiSmoke,
+    haze:WiDayHaze,
+    dust:WiDust,
+    fog:WiDayFog,
+    sand:WiSandstorm,
+    ash:WiVolcano,
+    squall:WiShowers,
+    tornado:WiTornado,
+    clear:WiDaySunny,
+    clouds:WiDayCloudy
 }
 
+/**
+ * Se recibira un estado que este en la lista de "validValues",
+ * para renderizar el icono correspondiente
+ * @param {state="snow"} param0 
+ * @returns 
+ */
 const IconState = ({state}) => {
     //se obtiene el icono y se almacena en Icon
     const Icon = stateByName[state]
+    // console.log("Nombre del icono:",state)
   return (
       <Icon/>//se muestra el icono
   )

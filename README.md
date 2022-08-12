@@ -9,7 +9,7 @@ Para correr el proyecto se necesitaran las dependencias del package.json
 ingresar el sig comando:
 >npm install
 
-importante tener node actualizado
+importante tener node actualizado en la 18.4.0 o superior
 
 >npm start
 Servidor y puerto por defecto.\
@@ -46,6 +46,11 @@ https://github.com/mrdoob/three.js/ (para usar vantajs)
 >npm install axios
 
 >npm install convert-units --save
+
+>npm install @mui/lab @mui/material
+
+>npm install moment --save
+
 
 # detalles de Storybook
 

@@ -2,8 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { LineChart , Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer} from 'recharts'
 
+
+/**
+ * Este componente es una grafica la cual cada punto en la grafica es un objeto
+ * cada objeto  tiene las propiedades:{
+        "dayHour": "Vie 06",
+        "min": 18,
+        "max": 27,
+    }
+ * Leer la Documentacion de ReCharts
+ * @param {obj1,obj2,...,obj n} param0 
+ * @returns 
+ */
 const ForecastChart = ({data}) => {
-  console.log(data)
+  // console.log(data)
   return (
     <div>
       <ResponsiveContainer height={250} width={"95%"}>

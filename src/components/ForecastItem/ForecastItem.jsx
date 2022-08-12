@@ -4,7 +4,11 @@ import { Grid, Typography } from '@mui/material';
 import {IconContext} from 'react-icons'
 import IconState, {validValues} from '../IconState/IconState';
 
-
+/**
+ * De Las Propiedades recibidas seran acomodada
+ * @param {weekDay="Lunes",hour={10},state="snow",temperature={40}}
+ * @returns 
+ */
 const ForecastItem = ({weekDay,hour,state,temperature}) => {
   return (
       <Grid container

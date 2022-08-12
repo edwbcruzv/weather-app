@@ -10,4 +10,4 @@ export const CityExample = (args) => (
     <CityInfo {...args}></CityInfo>
 )
 
-CityExample.args={city:"Mexico", country:"CDMX"}
+CityExample.args={city:"Capital del pais", country:"Pais"}
